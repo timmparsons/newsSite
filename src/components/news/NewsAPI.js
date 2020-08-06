@@ -28,9 +28,12 @@ const NewsAPI = () => {
     return <div>Loading...</div>
   } else {
     return (
-      <ul>
-        <NewsList articles={news}/>
-      </ul>
+      <div>
+        <h3>Top Headlines</h3>
+        <ul>
+          <NewsList articles={news}/>
+        </ul>
+      </div>
     )
   }
 }

@@ -7,8 +7,10 @@ const Stock = () => {
   const [ stockXvalue, setStockXValue ] = useState([]);
   const [ stockYvalue, setStockYValue ] = useState([]);
   const [stockInput, setStockInput ] = useState()
-  
+
+
   useEffect(() => {
+    
     fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=ZHSQDBJFT1MY4Z4Q`)
       .then(res => res.json())
       .then(
@@ -21,7 +23,10 @@ const Stock = () => {
         setError(error)
       })
   },[])
-  console.log(stocks)
+  
+  for(let key in stocks['Time Series (Daily)']) {
+    console.log(key)
+  }
   if(error) {
     return <div>Error: {error.message}</div>
   } else if (!isLoaded) {

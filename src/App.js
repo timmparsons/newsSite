@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import NewsAPI from './components/news/NewsAPI';
-import Stock from './components/stock/Stock';
+import StockMain from './components/stock/StockMain';
 
 function App() {
   return (
     <div className="App">
       <NewsAPI />
-      <Stock />
+      <StockMain />
     </div>
   );
 }

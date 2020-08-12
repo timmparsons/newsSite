@@ -3,14 +3,14 @@ import createPlotlyComponent from 'react-plotly.js/factory';
 const Plotly = window.Plotly;
 const Plot = createPlotlyComponent(Plotly);
 
-const Graph = ({stockXValue,stockYValue,stockSymbol}) => {
+const ShowStockData = ({xAxis,yAxis,stockSymbol}) => {
   
   return (
     <Plot
       data={[
         {
-          x: stockXValue,
-          y: stockYValue,
+          x: xAxis,
+          y: yAxis,
           type: 'scatter',
           mode: 'lines+markers',
           marker: {color: 'red'},
@@ -21,4 +21,4 @@ const Graph = ({stockXValue,stockYValue,stockSymbol}) => {
   )
 }
 
-export default Graph;
+export default ShowStockData;

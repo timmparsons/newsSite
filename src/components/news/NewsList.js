@@ -7,7 +7,7 @@ return (
     <div className="news-article" 
       style={{minHeight: "100%", 
         padding: "50px", 
-        width: "150px", 
+        width: "200px", 
         border: "1px solid lightgray", 
         margin: "25px"}} 
       key={i}>

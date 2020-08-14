@@ -7,6 +7,6 @@ This has started as a way for me to practice new things with React (or anything 
 - [x] Fetch news
 - [x] Fetch stocks
 - [ ] Add geolocation
-- [ ] Add searchbar for stocks
+- [x] Add searchbar for stocks
 - [ ] Add search for news articles
-- [ ] Add canvas (maybe)
+- [x] Add canvas

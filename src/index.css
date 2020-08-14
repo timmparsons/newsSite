@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Canvas section */ 
+
+
+.canvasContainer {
+  margin-top: 50px;
+}
+
+.canvas {
+  border: 1px solid lightgray;
+}
